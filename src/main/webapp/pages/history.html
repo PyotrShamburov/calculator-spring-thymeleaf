@@ -6,7 +6,7 @@
     <title>Title</title>
 </head>
 <body>
-<html th:include="_header.html"/>
+<html th:insert="_header.html"></html>
 <h1>History of operations: </h1>
 <ol>
     <tr th:each="operation : ${userCalcHistory}">
