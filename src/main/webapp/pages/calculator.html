@@ -19,13 +19,13 @@
     </ul>
 </div>
 <form action="#" th:action="@{/user/calc}" th:object="${newOperationDTO}" method="post">
-    <input type="text" th:field="*{num1}" />
+    <input type="text" placeholder="Number 1" th:field="*{num1}" />
     <p style="color: red" th:if="${#fields.hasErrors('num1')}" th:errors="*{num1}"></p>
     <br>
-    <input type="text" th:field="*{num2}" />
+    <input type="text" placeholder="Number 2" th:field="*{num2}" />
     <p style="color: red" th:if="${#fields.hasErrors('num2')}" th:errors="*{num2}"></p>
     <br>
-    <input type="text" th:field="*{operator}" />
+    <input type="text" placeholder="Operator" th:field="*{operator}" />
     <p style="color: red" th:if="${#fields.hasErrors('operator')}" th:errors="*{operator}"></p>
     <br>
     <button>Calculate!</button>

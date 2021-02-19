@@ -1,3 +1,5 @@
+package by.sokol.home;
+
 import by.sokol.home.configuration.WebConfiguration;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
