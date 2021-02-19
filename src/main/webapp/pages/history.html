@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<html th:include="_header.html"/>
+<h1>History of operations: </h1>
+<ol>
+    <tr th:each="operation : ${userCalcHistory}">
+        <li th:text="${operation}"></li>
+    </tr>
+</ol>
+</body>
+</html>
