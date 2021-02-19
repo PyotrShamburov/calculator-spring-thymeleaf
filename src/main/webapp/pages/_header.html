@@ -8,7 +8,7 @@
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 <body>
-<div th:if="${session.isGuest}">
+<div th:if="${session.isEmpty() || session.isGuest}">
     <ul class="nav nav-pills">
         <li class="nav-item">
             <a class="nav-link" style="font-size: medium" th:href="@{/}">Home</a>
